@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenTalk</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+    
+
+        <div class="header-content">
+            <img src="assets/logooo.png" alt="Logo OpenTalk" class="logo">
+            <div class="title-slogan">
+                <h1>OpenTalk</h1>
+                <p>Éduquer sans tabou, comprendre sans jugement</p>
+            </div>
+        </div>
+
+        <nav id="mainNav">
+            <button class="nav-btn active" onclick="showSection('accueil')">🏠 Accueil</button>
+            <button class="nav-btn" onclick="showSection('cours')">📚 Cours</button>
+            <button class="nav-btn" onclick="showSection('videos')">🎬 Vidéos</button>
+            <button class="nav-btn" onclick="showSection('audiobooks')">🎧 Audiobooks</button>
+            <button class="nav-btn" onclick="showSection('quiz')">🧠 Quiz</button>
+            <button class="nav-btn" onclick="showSection('chatbot')">💬 Chatbot</button>
+        </nav>
+    </header>
+
+    <!-- ===== CONTAINER PRINCIPAL ===== -->
+    <div class="container">
+
+        <!-- ===== ACCUEIL ===== -->
+        <div id="accueil" class="section active">
+            <div class="welcome-banner">
+                <h2>Bienvenue sur OpenTalk</h2>
+                <p>Ta plateforme éducative créée spécialement pour les adolescents.<br>
+                Notre mission est de t’accompagner dans ta découverte de l’éducation sexuelle de manière bienveillante, scientifique et sans jugement.</p>
+            </div>
+
+            <!-- ===== Vidéo Promotionnelle ===== -->
+            <div class="video-banner">
+                <video controls>
+                    <source src="vidéo/promo.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+            </div>
+
+            <div class="info-card">
+                <h3>Qu’est-ce qu’OpenTalk ?</h3>
+                <p>OpenTalk est une plateforme éducative complète qui te propose des informations fiables sur ton corps, tes émotions, les relations saines, et bien plus encore.<br>
+                Toutes nos ressources sont validées par des professionnels de santé et de l’éducation.<br>
+                Ici, tu peux apprendre à ton rythme, poser des questions en toute confidentialité, et accéder à des contenus adaptés à ton âge.</p>
+            </div>
+
+            <div class="confidentiality">
+                🔒 <strong>Confidentialité garantie :</strong> Toutes tes questions et ton parcours sur OpenTalk restent entièrement confidentiels. N’hésite pas à explorer librement.
+            </div>
+
+        
+
+
+
+<!-- ===== Bloc Rouge (urgence) ===== -->
+<div class="alert-urgent">
+    <h3>🚨 Besoin d’aide urgente ?</h3>
+    <p class="alert-intro">
+        Si tu es en danger ou menacé(e), n’attends pas. Ces services sont là pour t’aider.
+    </p>
+    <ul class="alert-list">
+        <li>🚓 <strong>Police / Sécurité :</strong> 19</li>
+        <li>📱 <strong>Urgences (depuis un portable) :</strong> 112</li>
+        <li>🛡️ <strong>Gendarmerie Royale :</strong> 177</li>
+        <li>🧒 <strong>Aide aux enfants (violence, maltraitance) :</strong> 2511</li>
+        <li>💻 <strong>Cyber & harcèlement en ligne :</strong> +212 6 24 40 58 89</li>
+    </ul>
+</div>
+
+
+<!-- ===== Bloc 2 : Explication adulte de confiance ===== -->
+<div class="alert-explanation">
+    👩‍🏫 <strong>Qu’est-ce qu’un adulte de confiance ?</strong><br>
+    Un adulte de confiance est une personne qui peut t’écouter et t’aider sans te juger. 
+    Cela peut être un parrain, un grand frère, une grande sœur, un enseignant, un éducateur, un voisin ou toute personne adulte qui te respecte et t’écoute.
+    <br>Tu n’es pas obligé de tout dire d’un coup, parler c’est déjà un premier pas.
+</div>
+
+<div class="alert-info">
+    💬 <strong>Besoin de parler ?</strong><br>
+    Si tu n’es pas en danger immédiat mais que tu veux parler, l’agent OpenTalk est là pour t’écouter et te soutenir.
+    <br><br>
+    <button class="open-chat-btn" onclick="showSection('chatbot')">💬 Parler à l’agent OpenTalk</button>
+</div>
+
+
+<!-- Message qui sort du bloc -->
+<div class="alert-message">
+    💛 Tu n’es pas seul(e). Demander de l’aide, ce n’est pas une faiblesse — c’est du courage 💪
+</div>
+
+
+
+
+
+        </div>
+
+        <!-- ===== COURS ===== -->
+        <div id="cours" class="section">
+            <div class="welcome-banner">
+                <h2>Cours</h2>
+                <p>Retrouve ici tous les cours et fiches éducatives. Clique sur les liens pour télécharger ou consulter les documents à ton rythme.</p>
+            </div>
+
+          <div class="info-card">
+    <h3>Cours PDF</h3>
+
+    <div class="courses-columns">
+
+        <!-- COLONNE FR -->
+        <div class="course-lang">
+            <h4>Français</h4>
+            <ul class="docs-list">
+                <li><a href="docs/pdf/Thème 1  Le corps qui change.pdf" target="_blank">Cours 1: Le corps qui change</a></li>
+                <li><a href="docs/pdf/Thème 2   L’hygiène et la santé du corps.pdf" target="_blank">Cours 2: L’hygiène et la santé du corps</a></li>
+                <li><a href="docs/pdf/Thème 3 La santé reproductive.pdf" target="_blank">Cours 3: La santé reproductive</a></li>
+                <li><a href="docs/pdf/Thème 4  Les relations saines et consentement..pdf" target="_blank">Cours 4: Les relations saines et consentement</a></li>
+                <li><a href="docs/pdf/Thème 5  Les différences entre les sexes et les stéréotypes de genre.pdf" target="_blank">Cours 5: Les différences entre les sexes et les stéréotypes de genre</a></li>
+                <li><a href="docs/pdf/Thème 6 Les émotions et le bien-être personnel.pdf" target="_blank">Cours 6: Les émotions et le bien-être personnel</a></li>
+                <li><a href="docs/pdf/Thème 7  La sécurité numérique et la désinformation.pdf" target="_blank">Cours 7: La sécurité numérique et la désinformation</a></li>
+            </ul>
+        </div>
+
+        <!-- COLONNE AR -->
+        <div class="course-lang arabic">
+            <h4>العربية</h4>
+            <ul class="docs-list">
+                <li><a href="docs/pdf/الموضوع 1.pdf" target="_blank">الموضوع 1 : التغيرات الجسدية</a></li>
+                <li><a href="docs/pdf/الموضوع 2 النظافة وصحة الجسم.pdf" target="_blank">الموضوع 2 : النظافة و صحة الجسم  </a></li>
+                <li><a href="docs/pdf/الموضوع3 الصحة الإنجابية.pdf" target="_blank">الموضوع 3: الصحة الإنجابية </a></li>
+                <li><a href="docs/pdf/الموضوع الرابع العلاقات الصحية والموافقة (الرضا).pdf" target="_blank">الموضوع 4 : العلاقات الصحية و الموافقة  </a></li>
+                <li><a href="docs/pdf/الموضوع الخامس الفروقات بين الجنسين والقوالب النمطية الجندرية.pdf" target="_blank">الموضوع 5 : الاختلافات بين الجنسين و الصور و النمطية </a></li>
+                <li><a href="docs/pdf/_الموضوع 6 العواطف والرفاهية الشخصية.pdf" target="_blank">الموضوع 6 : العواطف و الرفاهية الشخصية </a></li>
+                <li><a href="docs/pdf/الموضوع 7 الأمن الرقمي والتضليل الإعلامي (1).pdf" target="_blank">الموضوع 7 : الأمن الرقمي و التضليل الإعلامي </a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+           <!-- Fiches éducatives / Flyers -->
+<div class="info-card">
+    <h3>Fiches éducatives</h3>
+
+    <div class="courses-columns">
+
+        <!-- FR -->
+        <div class="course-lang">
+            <h4>Français</h4>
+            <ul class="docs-list">
+                <li><a href="docs/flyers/fiche1 fr.jpeg" target="_blank">Flyer 1: La puberté</a></li>
+                <li><a href="docs/flyers/fiche 2 fr.jpeg" target="_blank">Flyer 2: Le corps du garçon pendnat l'adolescence</a></li>
+                <li><a href="docs/flyers/fiche 3 fr.jpeg" target="_blank">Flyer 3: Le corps de la fille pendant l'adolescence</a></li>
+                <li><a href="docs/flyers/fiche 4 fr.jpeg" target="_blank">Flyer 4: Hygiène et Santé</a></li>
+                <li><a href="docs/flyers/fiche 5 fr.jpeg" target="_blank">Flyer 5: Les grandes ablutions "AlGhussl"</a></li>
+                <li><a href="docs/flyers/fiche 6 fr.jpeg" target="_blank">Flyer 6: La santé reproductive</a></li>
+                <li><a href="docs/flyers/fiche 7 fr.jpeg" target="_blank">Flyer 7: Les protections hygièniques</a></li>
+                <li><a href="docs/flyers/fiche 8 fr.jpeg" target="_blank">Flyer 8: Les moyens de contraception</a></li>
+                <li><a href="docs/flyers/fiche 9 fr.jpeg" target="_blank">Flyer 9: Les stéréotypes de Gendarmerie</a></li>
+                <li><a href="docs/flyers/fiche 10 fr.jpeg" target="_blank">Flyer 10: Les émotions</a></li>
+                <li><a href="docs/flyers/fiche 11 fr.jpeg" target="_blank">Flyer 11: La sécurité numérique</a></li>
+            </ul>
+        </div>
+
+        <!-- DARIJA -->
+        <div class="course-lang">
+            <h4>Darija</h4>
+            <ul class="docs-list">
+                <li><a href="docs/flyers/fiche 1 darija.jpeg" target="_blank">Flyer 1: البلوغ</a></li>
+                <li><a href="docs/flyers/fiche darija 2.jpeg" target="_blank">FFlyer 2: جسم الدرّي خلال المراهقة</a></li>
+                <li><a href="docs/flyers/fiche 3 darija.jpeg" target="_blank">Flyer 3: جسم البنت خلال فترة المراهقة</a></li>
+                <li><a href="docs/flyers/fiche 4 darija.jpeg" target="_blank">Flyer 4: النظافة و الصحة</a></li>
+                <li><a href="docs/flyers/fiche 5 darija vg.jpeg" target="_blank">Flyer 5: الغسل للدراري</a></li>
+                <li><a href="docs/flyers/fiche 5 darija vf.jpeg" target="_blank">Flyer 5: الغسل للبنات</a></li>
+                <li><a href="docs/flyers/fiche 6 darija.jpeg" target="_blank">Flyer 6:الصحة الإنجابية</a></li>
+                <li><a href="docs/flyers/fiche 7 darija.jpeg" target="_blank">Flyer 7:كيفاش تحمي راسك فالدورة الشهرية</a></li>
+                <li><a href="docs/flyers/fiche 8 darija.jpeg" target="_blank">Flyer 8:شي مسائل ديال منع الحمل</a></li>
+                <li><a href="docs/flyers/fiche 9 darija.jpeg" target="_blank">Flyer 9: الستيريوتاب أولا الصور النمطية</a></li>
+                <li><a href="docs/flyers/fiche 10 darija.jpeg" target="_blank">Flyer 10:أحاسيس ديالك فالمراهقة</a></li>
+                <li><a href="docs/flyers/fiche 11 darija.jpeg" target="_blank">Flyer 11:الأمان فالإنترنت</a></li>
+            </ul>
+        </div>
+
+        <!-- TIFINAGH -->
+        <div class="course-lang">
+            <h4>ⵣ Tifinagh</h4>
+            <ul class="docs-list">
+                <li><a href="docs/flyers/fiche 1 tifinagh.jpeg" target="_blank">Flyer 1: ⴰⵙⵏⵜⵍ 1: ⴰⵙⵏⴼⵍ ⵏ ⵜⴼⴳⴳⴰ (ⴰⵙⵏⴼⵍⵓⵍ ⵏ ⵜⴼⴳⴳⴰ)</a></li>
+                <li><a href="docs/flyers/fiche 2 tifinagh.jpeg" target="_blank">Flyer 2: ⵜⴰⴷⵓⵙⵉ ⴷ ⵜⴷⵓⵙⵉ ⵏ ⵜⴼⴳⴳⴰ (ⵜⴰⵙⵖⵍⵜ ⵏ ⵓⵙⵎⴰⵢⵏⵓ)</a></li>
+                <li><a href="docs/flyers/fiche 3 tifinagh.jpeg" target="_blank">FFlyer 3: ⵜⴰⴷⵓⵙⵉ ⵏ ⵜⴰⵔⵡⴰ</a></li>
+                <li><a href="docs/flyers/fiche 4 tifinagh.jpeg" target="_blank">Flyer 4: ⵜⵉⵣⴷⴰⵢⵉⵏ ⵜⵉⴷⵓⵙⴰⵏⵉⵏ ⴷ ⵓⵎⵙⴰⵙⴰ</a></li>
+                <li><a href="docs/flyers/fiche 5 tifinagh.jpeg" target="_blank">Flyer 5: ⵉⵎⵣⴰⵔⴰⵢⵏ ⵏ ⵡⴰⵏⴰⵡ ⴷ ⵉⵙⵜⵉⵔⵢⵓⵜⵉⴱⵏ ⵏ ⵡⴰⵏⴰⵡ</a></li>
+                <li><a href="docs/flyers/fiche 6 tifinagh.jpeg" target="_blank">Flyer 6: ⴰⵙⵡⵉⵏⴳⵎ ⴷ ⵓⵏⵣⵡⵉ ⴰⵏⴰⵎⵓⵏ</a></li>
+                <li><a href="docs/flyers/fiche 7 tifinagh.jpeg" target="_blank">Flyer 7: ⵜⴰⵏⴼⵔⵓⵜ ⵜⴰⵎⵓⴽⵔⵉⵙⵜ ⴷ ⵉⵏⵖⵎⵉⵙⵏ</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<!-- ===== VIDEOS ===== -->
+    </div>
+        </div>
+<!-- ===== VIDEOS ===== -->
+<div id="videos" class="section">
+    <div class="welcome-banner">
+        <h2>Vidéos</h2>
+        <p>Retrouve ici toutes les vidéos éducatives.</p>
+    </div>
+
+
+    <div class="video-section">
+        <!-- Vidéo 1 -->
+        <div class="video-banner">
+            <video controls>
+                <source src="vidéos/La puberté 1.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+            <p class="video-title">La puberté</p>
+        </div>
+
+        <!-- Vidéo 2 -->
+        <div class="video-banner">
+            <video controls>
+                <source src="vidéos/Corps et Intimité chez les deux sexe 2.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+            <p class="video-title">Corps et intimité chez les deux sexes</p>
+        </div>
+
+        <!-- Vidéo 3 -->
+        <div class="video-banner">
+            <video controls>
+                <source src="vidéos/Les Règles Expliquées 3.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+            <p class="video-title">Les règles expliquées</p>
+        </div>
+
+        <!-- Vidéo 4 -->
+        <div class="video-banner">
+            <video controls>
+                <source src="vidéos/L'Éjaculation Expliquée 4.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+            <p class="video-title">L'éjaculation expliquée + le Ghussl</p>
+        </div>
+
+        <!-- Vidéo 5 -->
+        <div class="video-banner">
+            <video controls>
+                <source src="vidéos/Prendre Soin de Soi (règle;ghussl) 5.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+            <p class="video-title">Comment prendre soin de soi pendant les règles (hygiène + Ghussl, version musulmane)</p>
+        </div>
+
+        <!-- Vidéo 6 -->
+        <div class="video-banner">
+            <video controls>
+                <source src="vidéos/Le Consentement Expliqué 6.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+            <p class="video-title">Le consentement expliqué</p>
+        </div>
+
+        <!-- Vidéo 7 -->
+        <div class="video-banner">
+            <video controls>
+                <source src="vidéos/Relations Saines Expliquées 7.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+            <p class="video-title">Les relations saines expliquées</p>
+        </div>
+
+        <!-- Vidéo 8 -->
+        <div class="video-banner">
+            <video controls>
+                <source src="vidéos/Reproduction &  contexte Islam 8.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+            <p class="video-title">La reproduction (contexte musulman)</p>
+        </div>
+
+        <!-- Vidéo 9 -->
+        <div class="video-banner">
+            <video controls>
+                <source src="vidéos/Sécurité Numérique Adolescents 9.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+            <p class="video-title">La sécurité numérique chez les adolescents</p>
+        </div>
+
+        <!-- Vidéo 10 -->
+        <div class="video-banner">
+            <video controls>
+          <source src="vidéos/Adolescence _ Gérer ses émotions 10.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+            <p class="video-title">Adolescence : comment gérer ses émotions ?</p>
+        </div>
+
+        <!-- Vidéo 11 -->
+        <div class="video-banner">
+            <video controls>
+                <source src="vidéos/Pudeur & Corps 11.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+            <p class="video-title">Pudeur & Corps</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+            </div>
+        </div>
+
+
+
+       <!-- ===== AUDIOBOOKS ===== -->
+<div id="audiobooks" class="section">
+    <div class="welcome-banner">
+        <h2>Audiobooks</h2>
+        <p>Retrouve ici tous les audiobooks éducatifs.</p>
+    </div>
+
+    <!-- Conteneur des colonnes -->
+    <div class="audio-columns">
+
+        <!-- Colonne 1 : Français -->
+        <div class="audio-column">
+            <h3>Français</h3>
+            <div class="audio-item">
+                <p><strong>Le corps qui change</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksFR/1fr.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>L’hygiène et la santé du corps</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksFR/2fr.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>La santé reproductive</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksFR/3fr.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>Les relations saines et le consentement</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksFR/4fr.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>Les différences entre les sexes et les stéréotypes de genre</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksFR/5fr.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>Les émotions et le bien-être personnel</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksFR/6fr.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>La sécurité numérique et la désinformation</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksFR/7fr.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+
+        <!-- Colonne 2 : Arabe -->
+        <div class="audio-column">
+            <h3>Arabe/العربية</h3>
+            <div class="audio-item">
+                <p><strong>التغيرات الجسدية </strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksARABE/1AR audio.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>النظافة و صحة الجسم</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksARABE/2AR audio.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>الصحة الإنجابية</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksARABE/3AR audio.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>العلاقات الصحية و الموافقة</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksARABE/4AR audio.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>الاختلافات بين الجنسين و الصور و النمطية</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksARABE/5AR audio.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>العواطف و الرفاهية الشخصية</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksARABE/6AR audio.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>الأمن الرقمي و التضليل الإعلامي</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksARABE/7AR audio.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+
+        <!-- Colonne 3 : Darija -->
+        <div class="audio-column">
+            <h3>Darija/الدارجة</h3>
+            <div class="audio-item">
+                <p><strong>تغيرات الجسم ديالك في البلوغ </strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksDARIJA/1AudioDARIJA.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>نظافة و صحة الجسم ديالك</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksDARIJA/2 AudioDARIJA.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>الصحة الإنجابية</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksDARIJA/3 AudioDARIJA.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>العلاقات الصحية و الموافقة</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksDARIJA/4 audioDARIJA.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>(للبنات) الغسل</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksDARIJA/5 Audio fille DARIJA.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>(للأولاد) الغسل</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksDARIJA/5garcçonDARIJA.mp3.ogg" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>المشاعر و الراحة النفسية</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksDARIJA/6 Audio DARIJA.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>كيفاش تحمي راسك فالدورة الشهرية</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksDARIJA/7AudioDARIJA.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+
+        <!-- Colonne 4 : Tachelhit -->
+        <div class="audio-column">
+            <h3>Tachelhit</h3>
+            <div class="audio-item">
+                <p><strong>ⴰⵙⵏⵜⵍ 1: ⴰⵙⵏⴼⵍ ⵏ ⵜⴼⴳⴳⴰ (ⴰⵙⵏⴼⵍⵓⵍ ⵏ ⵜⴼⴳⴳⴰ)</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksTACHELHIT/1amazigh.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>ⴰⵙⵏⵜⵍ 2: ⵜⴰⴷⵓⵙⵉ ⴷ ⵜⴷⵓⵙⵉ ⵏ ⵜⴼⴳⴳⴰ (ⵜⴰⵙⵖⵍⵜ ⵏ ⵓⵙⵎⴰⵢⵏⵓ)</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksTACHELHIT/2 amazigh.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>ⴰⵙⵏⵜⵍ 3: ⵜⴰⴷⵓⵙⵉ ⵏ ⵜⴰⵔⵡⴰ</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksTACHELHIT/3 amazigh.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio-item">
+                <p><strong>ⴰⵙⵏⵜⵍ 4: ⵜⵉⵣⴷⴰⵢⵉⵏ ⵜⵉⴷⵓⵙⴰⵏⵉⵏ ⴷ ⵓⵎⵙⴰⵙⴰ</strong></p>
+                <audio controls>
+                    <source src="audiobooks/audiobooksTACHELHIT/4amazigh.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+
+    </div> <!-- Fin audio-columns -->
+</div>
+
+       
+
+
+
+
+
+
+        </div>
+        <!-- ===== QUIZ ===== -->
+<div id="quiz" class="section">
+    <div class="welcome-banner">
+        <h2>Quiz</h2>
+        <p>Teste tes connaissances et vérifie tes réponses.</p>
+    </div>
+
+    <div class="quiz-note">
+    <div class="quiz-note-icon">☁️</div>
+    <p>
+        <strong>Un petit mot avant de commencer</strong><br><br>
+        Ces quiz sont là pour t’aider à apprendre et à mieux comprendre, à ton rythme.<br>
+        Il n’y a <strong>aucune pression</strong> et aucune obligation de réussir du premier coup.<br><br>
+        Se tromper, c’est normal : <strong>c’est comme ça qu’on apprend</strong> 💛<br>
+        Prends ton temps, sois bienveillant(e) avec toi-même, et utilise la correction pour progresser.
+    </p>
+</div>
+
+
+    <div class="info-card">
+        <h3>Thème 1 : Le corps qui change</h3>
+
+    <!-- Ajout d'un conteneur pour centrer les boutons -->
+        <a href="quiz/quizz/QUIZ Thème 1  Le Corps Qui Change.pdf" target="_blank" class="quiz-btn">
+            📄 Voir le quiz
+        </a>
+
+        <a href="quiz/quizz/correction/corrrection quiz theme 1.pdf" target="_blank" class="quiz-btn correction">
+            ✅ Voir la correction
+        </a>
+    </div>
+ 
+
+
+<div class="info-card">
+    <h3>Thème 2 : L’hygiène et la santé du corps</h3>
+
+    <a href="quiz/quizz/QUIZ Thème 2 L'hygiène et la santédu corps.pdf" target="_blank" class="quiz-btn">
+        📄 Voir le quiz
+    </a>
+
+    <a href="quiz/quizz/correction/corrrection quiz theme 2.pdf" target="_blank" class="quiz-btn correction">
+        ✅ Voir la correction
+    </a>
+</div>
+
+
+<div class="info-card">
+    <h3>Thème 3 : La santé reproductive</h3>
+
+    <a href="quiz/quizz/Quiz -theme 3 La santé Reproductive.pdf" target="_blank" class="quiz-btn">
+        📄 Voir le quiz
+    </a>
+
+    <a href="quiz/quizz/correction/correction quiz thème  3 .pdf" target="_blank" class="quiz-btn correction">
+        ✅ Voir la correction
+    </a>
+</div>
+
+
+
+<div class="info-card">
+    <h3>Thème 4 : Les Relations Saines et le Consentement</h3>
+
+    <a href="quiz/quizz/QUIZZ Thème 4  Les Relations Saines et le Consentement.pdf" target="_blank" class="quiz-btn">
+        📄 Voir le quiz
+    </a>
+
+    <a href="quiz/quizz/QUIZZ Thème 4  Les Relations Saines et le Consentement.pdf" target="_blank" class="quiz-btn correction">
+        ✅ Voir la correction
+    </a>
+</div>
+
+
+
+<div class="info-card">
+    <h3>Thème 5 : Les différences entre les sexes et les stéréotypes de genre</h3>
+
+    <a href="quiz/quizz/QUIZ theme 5 les diff entre les sexes et les stéreyotypes.pdf" target="_blank" class="quiz-btn">
+        📄 Voir le quiz
+    </a>
+
+    <a href="quiz/quizz/correction/correction quiz theme 5.pdf" target="_blank" class="quiz-btn correction">
+        ✅ Voir la correction
+    </a>
+</div>
+
+
+
+<div class="info-card">
+    <h3>Thème 6 : Les émotions et le bien-être personnel</h3>
+
+    <a href="quiz/quizz/QUIZ theme 6 les émotions et le bien etre personnels  (1).pdf" target="_blank" class="quiz-btn">
+        📄 Voir le quiz
+    </a>
+
+    <a href="quiz/quizz/QUIZ theme 6 les émotions et le bien etre personnels  (1).pdf" target="_blank" class="quiz-btn correction">
+        ✅ Voir la correction
+    </a>
+</div>
+
+
+
+<div class="info-card">
+    <h3>Thème 7 : la sécurité numérique et la désinformation</h3>
+
+    <a href="quiz/quizz/QUIZ theme 7 la sécurité numérique et la désinformation.pdf" target="_blank" class="quiz-btn">
+        📄 Voir le quiz
+    </a>
+
+    <a href="quiz/quizz/correction/coorection quiz 7.pdf" target="_blank" class="quiz-btn correction">
+        ✅ Voir la correction
+    </a>
+</div>
+
+
+
+
+</div>
+<!-- ===== CHATBOT ===== -->
+<div id="chatbot" class="section">
+    <div class="welcome-banner">
+        <h2 class="chatbot-title">💬 Chatbot</h2>
+
+        <!-- Bulle de texte introductive -->
+        <div class="chat-text-bubble">
+            🌟 <strong>Salut !</strong> Ici, ton agent éducatif est là pour toi.<br>
+            Pose-lui toutes tes questions sur ton corps, tes émotions, la puberté ou les relations.<br>
+            Pas de jugement, pas de pression, tout reste <strong>100% confidentiel</strong>.<br><br>
+            Prends ton temps, sois curieux·se, et explore en toute sécurité. 🤗<br>
+            Ton agent est là pour t’aider à comprendre, t’accompagner et te rassurer…  
+            comme un ami de confiance, toujours prêt à répondre.
+        
+        </div>
+
+        <!-- Iframe Chatbot Botpress -->
+        <div class="chatbot-iframe">
+            <iframe 
+                src="https://cdn.botpress.cloud/webchat/v3.5/shareable.html?configUrl=https://files.bpcontent.cloud/2025/12/13/13/20251213131644-1HKFSWBK.json"
+                width="100%" 
+                height="600px" 
+                style="border:none; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.2); min-height:600px;">
+            </iframe>
+        </div>
+    </div>
+</div>
+
+    </div> <!-- container -->
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>OpenTalk – Éducation sexuelle bienveillante.</p>
+        <p>Plateforme éducative pour adolescents.</p>
+        <p>Contenus validés par des professionnels de santé et de l’éducation.</p>
+        <p>Contact : <a href="mailto:opentalk.contact@gmail.com">opentalk.contact@gmail.com</a></p>
+    </footer>
+
+    <!-- ===== SCRIPT JS ===== -->
+    <script src="script.js"></script>
+
+</body>
+</html>

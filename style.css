@@ -1,0 +1,1054 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #c3b08d, #eac196, #e2ca9e, #e3dfc6, #bda87e, #f1f1f4, #efc883dd, #f4e9bd, #eace95);
+    background-size: 400% 400%;
+    color: #3e2f1c;
+    line-height: 1.6;
+    animation: gradientMove 20s ease infinite;
+    min-height: 100vh;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(135deg,#ac9667, #d5c4a3,, #ddbb97,#cab895, #dcc089, #efc883dd, #d1bd9b, #ac9667);
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.header-top {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+#switchLangBtn {
+    padding: 6px 12px;
+    border: none;
+    border-radius:15px;
+    cursor: pointer;
+    background: #8c7350;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.title-slogan h1 {
+    font-size: 2.8em;
+}
+
+.title-slogan p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* ===== NAV ===== */
+nav {
+    margin-top: 15px;
+}
+
+.nav-btn {
+    background: #8c7350;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    margin: 5px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.15em;
+    transition: 0.3s;
+}
+
+.nav-btn:hover, .nav-btn.active {
+    background: #b8935e;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+.section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* ===== RECTANGLES ===== */
+.welcome-banner, .info-card, .confidentiality, .alert-urgent {
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.welcome-banner {
+    background: #d4a574;
+    color: white;
+    text-align: center;
+}
+
+.info-card {
+    background: #fff8e7;
+}
+
+.confidentiality {
+    background: #e0d6b5;
+    font-weight: bold;
+}
+
+.alert-urgent {
+    background: #ffcccc;
+    color: #800000;
+    font-weight: bold;
+}
+
+.alert-urgent ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.alert-urgent li {
+    padding: 5px 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #8c7350;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+    border-top: 3px solid #b8935e;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ===== Vidéo ===== */
+.video-banner {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.video-banner video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== COURS en grille ===== */
+.docs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding-left: 0;
+}
+
+
+/* ===== Grille pour les vidéos ===== */
+.video-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.video-banner {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background: #fff8e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-banner video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.video-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.video-banner video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+/* ===== SECTION VIDEOS ===== */
+.video-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.video-banner {
+    background: #fff8e7;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-banner video {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.video-title {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+    color: #3e2f1c;
+}
+
+
+.docs-list li a {
+    text-decoration: none;
+    color: #3e2f1c;
+    background: #f0e6d2;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.docs-list li a:hover {
+    background: #d4a574;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.quiz-btn {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    padding: 12px 18px;
+    background: #d4a574;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.quiz-btn:hover {
+    background: #b8935e;
+}
+
+.quiz-btn.correction {
+    background: #a65c5c;
+}
+
+.quiz-btn.correction:hover {
+    background: #8a4545;
+}
+/* ===== NOTE BIENVEILLANTE QUIZ ===== */
+.quiz-note {
+    position: relative;
+    background: #f7f2e8;
+    border-radius: 25px;
+    padding: 30px 25px 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+    border: 2px dashed #d4a574;
+}
+
+.quiz-note p {
+    font-size: 1.1em;
+    color: #3e2f1c;
+    line-height: 1.6;
+}
+
+.quiz-note-icon {
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f7f2e8;
+    border-radius: 50%;
+    padding: 10px 14px;
+    font-size: 1.8em;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+/* ===== Animation nuage bienveillant ===== */
+@keyframes float {
+    0% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -6px); }
+    100% { transform: translate(-50%, 0); }
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.quiz-note {
+    animation: fadeSlide 1s ease forwards;
+}
+
+.quiz-note-icon {
+    animation: float 3s ease-in-out infinite;
+}
+/* ===== QUIZ CENTRÉ ===== */
+.quiz-card {
+    text-align: center;
+}
+
+.quiz-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.quiz-btn {
+    background: #d1c95c;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.quiz-btn:hover {
+    background: #f7de53;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.quiz-btn.correction {
+    background: #75d48d;
+}
+
+.quiz-btn.correction:hover {
+    background: #87dd99;
+}
+
+/* ===== PARAGRAPHE AVANT LES QUIZ – STYLE ATTRACTIF ===== */
+.quiz-note {
+    position: relative;
+    background: linear-gradient(135deg, #fff3e7, #f7f2e8); /* fond doux dégradé */
+    border-radius: 25px;
+    padding: 35px 25px 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+    border: 2px dashed #8a876ab0;
+    overflow: hidden;
+}
+
+/* Texte du paragraphe */
+.quiz-note p {
+    font-size: 1.15em;
+    color: #5f4b32; /* marron doux et chaleureux */
+    line-height: 1.6;
+}
+
+/* Icône principale flottante */
+.quiz-note-icon {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e3af467d;
+    border-radius: 50%;
+    padding: 12px 16px;
+    font-size: 3em;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    animation: float 3s ease-in-out infinite;
+    z-index: 2;
+}
+
+/* Animation nuage/élément flottant */
+@keyframes float {
+    0% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -8px); }
+    100% { transform: translate(-50%, 0); }
+}
+
+/* Petites étoiles décoratives dans le cadre */
+.quiz-note::before, .quiz-note::after {
+    content: "⭐"; /* tu peux remplacer par ☁️ ou autre */
+    position: absolute;
+    font-size: 2em;
+    color: #dfb33b;
+    z-index: 1;
+}
+
+.quiz-note::before {
+    top: 10px;
+    left: 15px;
+}
+
+.quiz-note::after {
+    bottom: 10px;
+    right: 20px;
+}
+
+/* Animation légère pour le bloc entier */
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.quiz-note {
+    animation: fadeSlide 1s ease forwards;
+}
+
+
+#quiz .info-card h3 {
+    text-align: center;
+}
+
+
+.quiz-note {
+    position: relative;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* cadre légèrement transparent */
+    overflow: hidden; /* pour que le fond ne déborde pas */
+}
+
+/* Fond derrière le cadre */
+.quiz-note::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/fond-quiz.png'); /* ton image de fond ici */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; /* tu peux ajuster la transparence */
+    z-index: 0;
+}
+
+/* Le texte reste au-dessus du fond */
+.quiz-note p, .quiz-note strong, .quiz-note .quiz-note-icon {
+    position: relative;
+    z-index: 1;
+}
+
+.quiz-btn {
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    gap: 15px;
+    flex-wrap: wrap; 
+    margin-top: 15px;
+}
+.quiz-btn.correction {
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    gap: 15px;
+    flex-wrap: wrap; 
+    margin-top: 15px;
+}
+/* ===== CHATBOT ===== */
+#chatbot .welcome-banner {
+    background: #f0e6d2; /* fond doux comme le reste de la plateforme */
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    text-align: center;
+    color: #3e2f1c;
+}
+
+#chatbot h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.chat-text-bubble {
+    background: #fff8e7;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    position: relative;
+}
+
+/* .chat-text-bubble::before {
+    content: "💬";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+} */
+
+.chatbot-iframe iframe {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+.chatbot-title{
+     position: relative;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e7cbae;
+    border-radius: 50%;
+    padding: 10px 14px;
+    font-size: 1.8em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);   
+}
+
+/* Responsive : s’adapte sur mobile */
+@media (max-width: 768px) {
+    .chat-text-bubble {
+        font-size: 1em;
+        padding: 15px;
+    }
+
+    #chatbot .welcome-banner {
+        padding: 20px 15px;
+    }
+
+    .chatbot-iframe iframe {
+        height: 400px;
+    }
+}
+/* ===== CHATBOT ===== */
+#chatbot .welcome-banner {
+    background: #f0e6d2;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    text-align: center;
+    color: #3e2f1c;
+}
+
+#chatbot h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.chat-text-bubble {
+    background: #fff8e7;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    position: relative;
+}
+
+/* .chat-text-bubble::before {
+    content: "💬";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+} */
+
+.chatbot-iframe iframe {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    min-height: 600px;
+}
+
+/* Responsive : mobile */
+@media (max-width: 768px) {
+    .chat-text-bubble {
+        font-size: 1em;
+        padding: 15px;
+    }
+
+    #chatbot .welcome-banner {
+        padding: 20px 15px;
+    }
+
+    .chatbot-iframe iframe {
+        height: 400px;
+    }
+}
+
+
+
+/* Bloc principal rouge */
+.alert-urgent {
+    position: relative;
+    background: #d93030; /* rouge vif */
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    max-width: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+/* Nuages flottants */
+.alert-urgent::before,
+.alert-urgent::after {
+    content: '';
+    position: absolute;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+}
+.alert-urgent::before {
+    top: -40px;
+    left: -50px;
+    width: 200px;
+    height: 100px;
+    animation: floatCloud 6s ease-in-out infinite;
+}
+.alert-urgent::after {
+    bottom: -30px;
+    right: -40px;
+    width: 150px;
+    height: 80px;
+    animation: floatCloud 8s ease-in-out infinite alternate;
+}
+
+@keyframes floatCloud {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+
+
+
+
+/* ===== Bloc Rouge (urgence) ===== */
+.alert-urgent {
+    position: relative;
+    background: #e57373; /* rouge plus clair */
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    max-width: 600px;   /* centrée */
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+/* Nuages flottants */
+.alert-urgent::before,
+.alert-urgent::after {
+    content: '';
+    position: absolute;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+}
+.alert-urgent::before {
+    top: -40px;
+    left: -50px;
+    width: 200px;
+    height: 100px;
+    animation: floatCloud 6s ease-in-out infinite;
+}
+.alert-urgent::after {
+    bottom: -30px;
+    right: -40px;
+    width: 150px;
+    height: 80px;
+    animation: floatCloud 8s ease-in-out infinite alternate;
+}
+
+@keyframes floatCloud {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.alert-urgent h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+.alert-urgent ul {
+    padding-left: 20px;
+}
+.alert-urgent ul li {
+    margin-bottom: 8px;
+}
+
+/* ===== Bloc Message Jaune ===== */
+.alert-message {
+    background: #f9a825; /* jaune/orange */
+    color: #000;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 12px;
+    max-width: 90%;
+    margin: -10px auto 20px auto; /* juste sous le rouge */
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    font-size: 0.95em;
+    animation: bounceText 2s ease-in-out infinite alternate;
+}
+
+@keyframes bounceText {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+/* ===== Blocs Gris et Bleu ===== */
+.alert-explanation,
+.alert-info {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 18px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 0.95em;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Gris : adulte de confiance */
+.alert-explanation {
+    background: #eceff1;
+    color: #000;
+}
+
+/* Bleu : besoin de parler */
+.alert-info {
+    background: #4fc3f7;
+    color: #000;
+}
+
+/* Bouton agent OpenTalk */
+.alert-info button.open-chat-btn {
+    margin-top: 12px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    background: #4794c1;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.alert-info button.open-chat-btn:hover {
+    background: #4794c1;
+}
+
+/* ===== Chatbot Pop-up ===== */
+#chatOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#chatOverlay .chatContainer {
+    width: 90%;
+    max-width: 800px;
+    height: 600px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+#chatOverlay .chatContainer button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #d93030;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+
+.audio-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* permet de passer à la ligne sur mobile */
+    margin-top: 20px;
+}
+
+.audio-column {
+    flex: 1;
+    min-width: 220px;
+    background: #dbd5ca55;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.audio-column h3 {
+    background-color: #5c4f2bef; /* rouge */
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.audio-item {
+    margin-bottom: 12px;
+}
+
+
+
+
+
+
+.audio-column {
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #dfdbccdb; /* garde ta couleur actuelle */
+}
+
+/* Bulles flottantes avec pseudo-éléments */
+.audio-column::before {
+    content: '💫🎵🌟🎶'; /* émojis en arrière-plan */
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 50px;
+    opacity: 0.05; /* très léger */
+    pointer-events: none;
+    white-space: pre; /* permet de garder les espaces */
+}
+
+/* Bulles animées avec keyframes */
+.audio-column::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 20%;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: floatUp 6s infinite ease-in;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-300px) scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* Tu peux dupliquer l'animation avec des delays pour avoir plusieurs bulles */
+.audio-column:nth-child(1)::after { animation-delay: 0s; }
+.audio-column:nth-child(2)::after { animation-delay: 2s; }
+.audio-column:nth-child(3)::after { animation-delay: 4s; }
+.audio-column:nth-child(4)::after { animation-delay: 1s; }
+
+
+
+
+
+.audio-column {
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #f7f7f7; /* tu peux garder ta couleur */
+}
+
+/* Émojis de fond pour chaque colonne */
+.audio-column::before {
+    content: '🌟💫🎵🎶✨'; /* émojis fun */
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 50px;
+    opacity: 0.05;
+    pointer-events: none;
+    white-space: pre;
+}
+
+/* Bulles flottantes : on va créer 6 bulles par colonne avec nth-child */
+.audio-column::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: floatUp 6s infinite ease-in;
+}
+
+/* Déplacement horizontal et timing différents pour chaque colonne */
+.audio-column:nth-child(1)::after { left: 10%; animation-duration: 5s; }
+.audio-column:nth-child(2)::after { left: 40%; animation-duration: 7s; }
+.audio-column:nth-child(3)::after { left: 70%; animation-duration: 6s; }
+.audio-column:nth-child(4)::after { left: 25%; animation-duration: 8s; }
+
+/* Animation des bulles */
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-300px) scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+/* ===== Organisation des documents par colonnes ===== */
+.docs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 0;
+}
+
+
+
+
+
+.courses-columns {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.course-lang {
+    flex: 1;
+    min-width: 260px;
+    background: #f7f2e8;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.course-lang h4 {
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    background: #d4a574;
+    color: white;
+    font-size: 1.1em;
+}
+
+/* Arabe : écriture RTL */
+.course-lang.arabic {
+    direction: rtl;
+    text-align: right;
+}
